@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, Image, Button } from "react-bootstrap";
+import { Container, Card, Button } from "react-bootstrap";
 import OwlCarousel from "react-owl-carousel2";
 import "react-owl-carousel2/src/owl.carousel.css";
 import "react-owl-carousel2/src/owl.theme.default.css";

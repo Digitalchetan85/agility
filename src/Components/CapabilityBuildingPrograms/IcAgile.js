@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Row, Col, Card, Image, Button } from "react-bootstrap";
+import { Container, Row, Col, Card, Image } from "react-bootstrap";
+import Model from '../Modals/IcAgileModel';
 import img1 from '../Images/capability-building-programs/icp-acc.png'
 import img2 from '../Images/capability-building-programs/icp-cat.png'
 import img3 from '../Images/capability-building-programs/icp-org.png'
@@ -16,6 +17,9 @@ const IcAgile = () => {
     { id: 5, imgurl: img5, alt: "", title: "ICP - ENT", description: "text" },
     { id: 6, imgurl: img6, alt: "", title: "ICP - PDV", description: "text" },
   ];
+
+
+
 
   return (
     <div>
@@ -59,7 +63,7 @@ const IcAgile = () => {
                     <Card.Text>
                       {course.description}
                     </Card.Text>
-                    <Button variant="primary">Read More</Button>
+                    <Model />
                   </Card.Body>
                 </Card>
               </Col>

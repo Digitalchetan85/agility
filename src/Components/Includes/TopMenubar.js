@@ -85,6 +85,7 @@ const TopMenubar = () => {
                 </NavDropdown.Item>
               </NavDropdown>
               <Nav.Link href="/contact-us">Contact Us</Nav.Link>
+              <Nav.Link href="/quiz">Quiz</Nav.Link>
             </Nav>
             <Nav>{/* <Nav.Link>Download Brochure</Nav.Link> */}</Nav>
           </Navbar.Collapse>

@@ -7,6 +7,7 @@ import Contact from './Components/Contact';
 import IcAgile from './Components/CapabilityBuildingPrograms/IcAgile';
 import Dasa from './Components/CapabilityBuildingPrograms/Dasa';
 import Safe from './Components/CapabilityBuildingPrograms/Safe';
+import Quiz from './Components/Quiz/Quiz';
 import './App.scss';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/capability-building-programs/ic-agile" component={IcAgile}></Route>
           <Route path="/capability-building-programs/dasa" component={Dasa}></Route>
           <Route path="/capability-building-programs/safe" component={Safe}></Route>
+          <Route path="/quiz" component={Quiz}></Route>
         </Switch>
         <Footer />
       </Router>

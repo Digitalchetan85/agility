@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row, Container, Card, Image } from "react-bootstrap";
+import { Col, Row, Container, Image } from "react-bootstrap";
 import Services from "./Includes/ServicesPages";
 import MainSlider from "./Includes/MainSlider";
 import Mentoring from "./Includes/MentoringDetails";
@@ -105,7 +105,75 @@ const Home = () => {
         <h2 className="pt-2 pb-2 text-center">Blogs</h2>
         <Blogs />
       </div>
+      <div className="pt-3 pb-3 pt-md-5 pb-md-5">
+      <Container>
+        <Row>
+          <Col md={4}>
+            <div>
+            <div className="m-1">
+                  <iframe
+                    width="350"
+                    height="315"
+                    src="https://www.youtube.com/embed/SQ8AXUXLsxQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+            </div>
+          </Col>
+          <Col md={4}>
+            <div>
+            <div className="m-1">
+                  <iframe
+                    width="350"
+                    height="315"
+                    src="https://www.youtube.com/embed/SQ8AXUXLsxQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+            </div>
+          </Col>
+          <Col md={4}>
+            <div>
+            <div className="m-1">
+                  <iframe
+                    width="350"
+                    height="315"
+                    src="https://www.youtube.com/embed/SQ8AXUXLsxQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+            </div>
+          </Col>
+          {/* <Col md={3}>
+            <div>
+            <div className="m-1">
+                  <iframe
+                    width="350"
+                    height="315"
+                    src="https://www.youtube.com/embed/SQ8AXUXLsxQ"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+            </div>
+          </Col> */}
+        </Row>
+      </Container>
     </div>
+    </div>
+
+    
   );
 };
 
