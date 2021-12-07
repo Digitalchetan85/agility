@@ -19,7 +19,7 @@ const Contact = () => {
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb justify-content-center">
                     <li className="breadcrumb-item">
-                      <a href="/">Home</a>
+                      <a href="/" className="custom">Home</a>
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       Contact us

@@ -3,16 +3,19 @@ import { Container, Card, Button } from "react-bootstrap";
 import OwlCarousel from "react-owl-carousel2";
 import "react-owl-carousel2/src/owl.carousel.css";
 import "react-owl-carousel2/src/owl.theme.default.css";
-import img1 from "../Images/temp.png";
-import img2 from "../Images/temp.png";
+import img1 from "../Images/coaching/1.png";
+import img2 from "../Images/training/3.png";
+import img3 from "../Images/mentoring/2.png";
+import img4 from "../Images/dyi-templates/4.png";
+import img5 from "../Images/assessments/5.png";
 
 const Blogs = () => {
   const associations = [
     { id: 1, imgurl: img1, alt: "", title: "Coaching" },
     { id: 2, imgurl: img2, alt: "", title: "Mentoring" },
-    { id: 3, imgurl: img1, alt: "", title: "Trainings" },
-    { id: 4, imgurl: img1, alt: "", title: "Assessment" },
-    { id: 5, imgurl: img1, alt: "", title: "DIY Templates" },
+    { id: 3, imgurl: img3, alt: "", title: "Trainings" },
+    { id: 4, imgurl: img5, alt: "", title: "Assessment" },
+    { id: 5, imgurl: img4, alt: "", title: "DIY Templates" },
   ];
 
   const options = {

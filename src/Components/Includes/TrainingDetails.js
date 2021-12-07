@@ -3,13 +3,17 @@ import { Container, Card, Button } from "react-bootstrap";
 import OwlCarousel from "react-owl-carousel2";
 import "react-owl-carousel2/src/owl.carousel.css";
 import "react-owl-carousel2/src/owl.theme.default.css";
-import img1 from "../Images/temp.png";
-import img2 from "../Images/temp.png";
+import img1 from "../Images/training/8.png";
+import img2 from "../Images/training/9.png";
+import img3 from "../Images/training/10.png";
+import img4 from "../Images/training/11.png";
 
 const TrainingDetails = () => {
   const associations = [
     { id: 1, imgurl: img1, alt: "", title: "Capabiltity Building Programs" },
     { id: 2, imgurl: img2, alt: "", title: "Experimental Learning Programs" },
+    { id: 3, imgurl: img3, alt: "", title: "Capabiltity Building Programs" },
+    { id: 4, imgurl: img4, alt: "", title: "Experimental Learning Programs" },
   ];
 
   const options = {
@@ -19,7 +23,7 @@ const TrainingDetails = () => {
     responsive: {
       0: {
         items: 1,
-        nav: true,
+        nav: false,
       },
       600: {
         items: 3,

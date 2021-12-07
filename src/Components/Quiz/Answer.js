@@ -11,13 +11,13 @@ const Answer = ({
   const isCorrectAnswer = currentAnswer && answerText === currentAnswer;
   const isWrongAnswer =
     currentAnswer === answerText && currentAnswer !== correctAnswer;
-  const correctAnswerClass = isCorrectAnswer ? "border-success" : "";
-  const wrongAnswerClass = isWrongAnswer ? "" : "";
-  const disabledClass = currentAnswer ? "" : "";
+  const correctAnswerClass = isCorrectAnswer ? "bg-success text-white" : "";
+  const wrongAnswerClass = isWrongAnswer ? "bg-success text-white" : "";
+  const disabledClass = currentAnswer ? "bg-success text-white" : "";
   return (
     <div>
       <div
-        className={`border p-2 ${correctAnswerClass} ${wrongAnswerClass} ${disabledClass}`}
+        className={`border border-info p-2 ${correctAnswerClass} ${wrongAnswerClass} ${disabledClass}`}
         onClick={() => onSelectAnswer(answerText)}
       >
         <div className="m-1 d-inline">{letterMapping[index]}.</div>

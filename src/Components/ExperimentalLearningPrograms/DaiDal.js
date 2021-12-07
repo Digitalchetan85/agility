@@ -1,14 +1,18 @@
 import React from "react";
 import { Container, Row, Col, Card, Image, Button } from "react-bootstrap";
-import img1 from "../Images/experimental-learning-programs/dai-dal/dai-dal,png";
-import img2 from "../Images/experimental-learning-programs/dai-dal/dai-esm,png";
-import img3 from "../Images/experimental-learning-programs/dai-dal/dai-eac,png";
+import { Link } from "react-router-dom";
+import img1 from "../Images/capability-building-programs/dasa/dasa.png";
 
 const DaiDal = () => {
   const courses = [
-    { id: 1, imgurl: img1, alt: "", title: "DAI - DAL", description: "text" },
-    { id: 2, imgurl: img2, alt: "", title: "DAI - ESM", description: "text" },
-    { id: 3, imgurl: img3, alt: "", title: "DAI - EAC", description: "text" },
+    {
+      id: 1,
+      imgurl: img1,
+      alt: "",
+      title: "DASA",
+      description: "text",
+      to: "/dai-dal-flipbook",
+    },
   ];
 
   return (
@@ -27,7 +31,7 @@ const DaiDal = () => {
                       </a>
                     </li>
                     <li className="breadcrumb-item" aria-current="page">
-                      Capability Building Programs
+                      Experimental Learning Programs
                     </li>
                     <li className="breadcrumb-item active" aria-current="page">
                       DAI - DAL
@@ -56,7 +60,7 @@ const DaiDal = () => {
                   <Card.Body>
                     <Card.Title>{course.title}</Card.Title>
                     <Card.Text>{course.description}</Card.Text>
-                    <Button variant="primary">Read More</Button>
+                    <Button variant="primary" as={Link} to={course.to}>Read More</Button>
                   </Card.Body>
                 </Card>
               </Col>

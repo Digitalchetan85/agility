@@ -3,8 +3,8 @@ import { Container, Card, Button } from "react-bootstrap";
 import OwlCarousel from "react-owl-carousel2";
 import "react-owl-carousel2/src/owl.carousel.css";
 import "react-owl-carousel2/src/owl.theme.default.css";
-import img1 from "../Images/temp.png";
-import img2 from "../Images/temp.png";
+import img1 from "../Images/mentoring/6.png";
+import img2 from "../Images/mentoring/7.png";
 
 const MentoringDetails = () => {
   const associations = [

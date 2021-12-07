@@ -1,10 +1,11 @@
 import React from "react";
 import { Navbar, NavDropdown, Container, Nav, Image } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import Logo from "../Images/logo.png";
 
 const TopMenubar = () => {
   return (
-    <div className="sticky-top bg-white">
+    <div className="sticky-top bg-white shadow">
       <Navbar
         collapseOnSelect
         expand="lg"
@@ -14,29 +15,42 @@ const TopMenubar = () => {
         id="navbar"
       >
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand as={Link} to="/agility">
             <Image src={Logo} alt="Shanthas Designs and Prints Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/about-us">About Us</Nav.Link>
+              <Nav.Link as={Link} to="/agility">
+                Home
+              </Nav.Link>
+              <Nav.Link as={Link} to="/about-us">
+                About Us
+              </Nav.Link>
               <NavDropdown title="Training" id="training">
                 <NavDropdown
                   title="Capability Building Programs"
                   id="coaching-inner"
                   drop="end"
                 >
-                  <NavDropdown.Item href="/capability-building-programs/ic-agile">
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/capability-building-programs/ic-agile"
+                  >
                     IC Agile
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="/capability-building-programs/safe">
-                    Safe
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/capability-building-programs/safe"
+                  >
+                    SAFe
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="/capability-building-programs/dasa">
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/capability-building-programs/dasa"
+                  >
                     DASA
                   </NavDropdown.Item>
                 </NavDropdown>
@@ -45,47 +59,70 @@ const TopMenubar = () => {
                   id="coaching-inner"
                   drop="end"
                 >
-                  <NavDropdown.Item href="">DAI - ESM</NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/experimental-learning-programs/dai-esm"
+                  >
+                    DAI - ESM
+                  </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="">DAI - EAC</NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/experimental-learning-programs/dai-eac"
+                  >
+                    DAI - EAC
+                  </NavDropdown.Item>
                   <NavDropdown.Divider />
-                  <NavDropdown.Item href="">DAI - DAL</NavDropdown.Item>
+                  <NavDropdown.Item
+                    as={Link}
+                    to="/experimental-learning-programs/dai-dal"
+                  >
+                    DAI - DAL
+                  </NavDropdown.Item>
                 </NavDropdown>
               </NavDropdown>
               <NavDropdown title="Coaching" id="coaching">
-                <NavDropdown.Item href="/executive-coaching">
+                <NavDropdown.Item as={Link} to="/executive-coaching">
                   Executive Coaching
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/team-coaching">
+                <NavDropdown.Item as={Link} to="/team-coaching">
                   Team Coaching
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="/mentoring">Mentoring</Nav.Link>
+              <Nav.Link as={Link} to="/mentoring">
+                Mentoring
+              </Nav.Link>
               <NavDropdown
                 title="Resources"
                 id="digital-marketing-solutions-dropdown"
               >
-                <NavDropdown.Item href="/youtube-videos">
+                <NavDropdown.Item as={Link} to="/youtube-videos">
                   Youtube Videos
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/blogs">Blogs</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/blogs">
+                  Blogs
+                </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/reusable-templates">
+                <NavDropdown.Item as={Link} to="/reusable-templates">
                   Reusable Templates
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/assesments">
+                <NavDropdown.Item as={Link} to="/assessments">
                   Assesments
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
-                <NavDropdown.Item href="/work-books">
+                <NavDropdown.Item as={Link} to="/work-books">
                   Work books
                 </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/custom-slider">
+                  customslider
+                </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="/contact-us">Contact Us</Nav.Link>
-              <Nav.Link href="/quiz">Quiz</Nav.Link>
+              <Nav.Link as={Link} to="/contact-us">
+                Contact Us
+              </Nav.Link>
             </Nav>
             <Nav>{/* <Nav.Link>Download Brochure</Nav.Link> */}</Nav>
           </Navbar.Collapse>

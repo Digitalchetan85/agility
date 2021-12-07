@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button, Modal, Row, Col, Container, Form } from "react-bootstrap";
-import PayPal from '../PayPal/PayPal'
+import PayPal from "../PayPal/PayPal";
 
 const IcAgileModel = () => {
   const [show, setShow] = useState(false);
@@ -124,7 +124,6 @@ const IcAgileModel = () => {
     xhr.send();
   };
 
-
   const [checkout, setCheckout] = useState(false);
 
   return (
@@ -148,14 +147,17 @@ const IcAgileModel = () => {
             <Row>
               <Col md={6}>
                 <div className="">
-                <iframe allowfullscreen="allowfullscreen" src="https://designrr.page?id=144098&token=3762525372&type=FP&h=7518" height="600" width="800" frameborder="0"></iframe>
+                  <iframe
+                    title="IC Agile FlipBook"
+                    src="https://designrr.page?id=144098&token=3762525372&type=FP&h=7518"
+                    height="600"
+                    width="800"
+                  ></iframe>
                 </div>
               </Col>
               <Col md={6}>
                 <h3 className="text-primary">Schedule Your Course</h3>
-                <p>
-                  Course Info
-                </p>
+                <p>Course Info</p>
                 <Form
                   noValidate
                   validated={validated}
@@ -266,15 +268,17 @@ const IcAgileModel = () => {
                         ) : null}
                       </div>
                       <div className="">
-
-                        { checkout ? (
+                        {checkout ? (
                           <PayPal />
-                        ) : (   
-                        <Button variant="primary" onClick={ () => {
-                          setCheckout(true);
-                        }}>
-                          Checkout
-                        </Button>
+                        ) : (
+                          <Button
+                            variant="primary"
+                            onClick={() => {
+                              setCheckout(true);
+                            }}
+                          >
+                            Checkout
+                          </Button>
                         )}
                       </div>
                     </Col>

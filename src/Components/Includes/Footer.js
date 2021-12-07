@@ -20,10 +20,10 @@ const Footer = () => {
                 <p className="text-white">
                   Address
                   <br />
-                  <a href="tel:09513838585">Contact: +91 95138 38585</a>
+                  <a href="tel:09686409060">Contact: +91 96864 09060</a>
                   <br />
-                  <a href="mailto:info@digitalagility.com">
-                    Email: info@digitalagility.com
+                  <a href="mailto:collaborate@digitalagilityinstitute.com">
+                    Email: collaborate@digitalagilityinstitute.com
                   </a>
                 </p>
               </address>
