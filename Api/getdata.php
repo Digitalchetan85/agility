@@ -9,9 +9,9 @@
 
     //echo $img;
 
-    $con = mysqli_connect("localhost", "root", "", "agility") or die("Couldn't connect to the server'");
+    $con = mysqli_connect("localhost", "brandwit_agility", "brandwit_agility", "brandwit_agility") or die("Couldn't connect to the server'");
 
-    $result = mysqli_query($con, "select * from customslider");
+    $result = mysqli_query($con, "select * from agility");
 
     $data = [];
 

@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Col, Container, Form, Row } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import PayPal from "../PayPal/PayPal";
-import video1 from "../Images/videos/ICP-ACC.mp4"
+import video1 from "../Images/videos/ICP-ACC.mp4";
+import video2 from "../Images/testimonial-videos/Andres-Feedback-final.mp4";
 
 const IcAgileIcpAcc = () => {
   useEffect(() => {
@@ -133,7 +134,7 @@ const IcAgileIcpAcc = () => {
           <Row>
             <Col md={12}>
               <div className="">
-                <h2 className="text-center text-white">IC - Agile</h2>
+                <h2 className="text-center text-white">ICP - ACC</h2>
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb justify-content-center">
                     <li className="breadcrumb-item">
@@ -142,11 +143,14 @@ const IcAgileIcpAcc = () => {
                       </a>
                     </li>
                     <li className="breadcrumb-item" aria-current="page">
-                      <a href="/" className="custom">
-                        Capability Building Programs
+                      <a
+                        href="/capability-building-programs/ic-agile"
+                        className="custom"
+                      >
+                        IC - Agile
                       </a>
                     </li>
-                    <li className="breadcrumb-item">IC - Agile - Flipbook</li>
+                    <li className="breadcrumb-item">ICP - ACC</li>
                   </ol>
                 </nav>
               </div>
@@ -159,15 +163,29 @@ const IcAgileIcpAcc = () => {
           <Row>
             <Col md={8}>
               <div className="">
-                <div className="ratio ratio-16x9">
+                <div className="ratio ratio-4x3">
                   <iframe
                     src="https://designrr.page?id=149596&token=4003258846&type=FP&h=3861"
                     title="IC Agile FlipBook"
                   ></iframe>
                 </div>
               </div>
+
+              <div className="pt-2 pb-2">
+                <Row>
+                  <Col md={6}>
+                    <div className="text-center pt-3 pb-3">
+                      <h2 className="text-white"></h2>
+                      <video height="400" width="400" controls>
+                        <source src={video2} type="video/mp4"></source>
+                      </video>
+                    </div>
+                  </Col>
+                  <Col md={6}></Col>
+                </Row>
+              </div>
             </Col>
-            <Col md={4} className="align-self-center">
+            <Col md={4} className="">
               <div className="text-center pt-3 pb-3 bg-primary">
                 <h2 className="text-white"></h2>
                 <video height="300" width="300" controls autoPlay>

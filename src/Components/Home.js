@@ -1,13 +1,13 @@
 import React from "react";
-import { Col, Row, Container, Image } from "react-bootstrap";
+import { Col, Row, Container, Image, Button } from "react-bootstrap";
 import Services from "./Includes/ServicesPages";
 import MainSlider from "./Includes/MainSlider";
 import Mentoring from "./Includes/MentoringDetails";
 import Coaching from "./Includes/CoachingDetails";
 import Training from "./Includes/TrainingDetails";
-import Blogs from "./Blogs/Blog";
 import Slide1 from "./Images/temp1.png";
 import YouTubeVideos from "./Includes/YouTubeVideos";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -102,12 +102,13 @@ const Home = () => {
         <h2 className="pt-2 pb-2 text-center text-primary">Coaching</h2>
         <Coaching />
       </div>
-      <div className="pt-3 pb-3 pt-md-5 pb-md-5 bg-light">
-        <h2 className="pt-2 pb-2 text-center text-primary">Blogs</h2>
-        <Blogs />
-      </div>
       <div className="pt-3 pb-3 pt-md-5 pb-md-5">
         <YouTubeVideos />
+        <div className="text-center">
+          <Button className="btn btn-primary" as={Link} to="/youtube-videos">
+            View More Videos
+          </Button>
+        </div>
       </div>
     </div>
   );

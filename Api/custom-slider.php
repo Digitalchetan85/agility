@@ -10,9 +10,9 @@
 
     //echo $img;
 
-    $con = mysqli_connect("localhost", "root", "", "agility") or die("Couldn't connect to the server'");
+    $con = mysqli_connect("localhost", "brandwit_agility", "brandwit_agility", "brandwit_agility") or die("Couldn't connect to the server'");
 
-    mysqli_query($con, "insert into customslider (imageurl, alt) values('$img', '$alt')");
+    mysqli_query($con, "insert into agility (imageurl, alt) values('$img', '$alt')");
 
     if(mysqli_affected_rows($con) == 1) {
         echo "Added";

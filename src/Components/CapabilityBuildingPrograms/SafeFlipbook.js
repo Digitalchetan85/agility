@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Card, Col, Container, Form, Row } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import PayPal from "../PayPal/PayPal";
+import video1 from "../Images/SAFe-Course-Videos/Leading-SAFe.mp4"
+import video2 from "../Images/testimonial-videos/Ian-Feedback-final.mp4"
 
 const SafeFlipbook = () => {
   useEffect(() => {
@@ -132,7 +134,7 @@ const SafeFlipbook = () => {
           <Row>
             <Col md={12}>
               <div className="">
-                <h2 className="text-center text-white">SAFe Flipbook</h2>
+                <h2 className="text-center text-white">SAFe5 SA</h2>
                 <nav aria-label="breadcrumb">
                   <ol className="breadcrumb justify-content-center">
                     <li className="breadcrumb-item">
@@ -141,11 +143,14 @@ const SafeFlipbook = () => {
                       </a>
                     </li>
                     <li className="breadcrumb-item" aria-current="page">
-                      <a href="/" className="custom">
+                      <a
+                        href="/capability-building-programs/safe"
+                        className="custom"
+                      >
                         Capability Building Programs
                       </a>
                     </li>
-                    <li className="breadcrumb-item">SAFe - Flipbook</li>
+                    <li className="breadcrumb-item">SAFe5 - SA</li>
                   </ol>
                 </nav>
               </div>
@@ -157,29 +162,35 @@ const SafeFlipbook = () => {
         <Container>
           <Row>
             <Col md={8}>
-              <div className="ratio ratio-16x9">
-                <iframe src="https://dai.trafft.com/booking-embedded" />
-                {/* <iframe
-                  src="https://designrr.page?id=144725&token=3078841482&type=FP&h=9566"
+              <div className="ratio ratio-4x3">
+                <iframe
+                  src="https://designrr.page?id=149605&token=146268771&type=FP&h=9119"
                   title="SAFe Flip Book"
-                ></iframe> */}
+                ></iframe>
+              </div>
+
+              <div className="pt-2 pb-2">
+                <Row>
+                  <Col md={6}>
+                    <div className="text-center pt-3 pb-3">
+                      <h2 className="text-white"></h2>
+                      <video height="400" width="400" controls>
+                        <source src={video2} type="video/mp4"></source>
+                      </video>
+                    </div>
+                  </Col>
+                  <Col md={6}></Col>
+                </Row>
               </div>
             </Col>
-            <Col md={4} className="align-self-center">
-              <div className="shadow p-3">
-                <h3 className="text-primary">Course Details</h3>
-                <Card className="border-0">
-                  <Card.Img variant="top" src="holder.js/100px180" />
-                  <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                  </Card.Body>
-                </Card>
+            <Col md={4} className="">
+              <div className="text-center pt-3 pb-3 bg-primary">
+                <h2 className="text-white"></h2>
+                <video height="300" width="300" controls autoPlay>
+                  <source src={video1} type="video/mp4"></source>
+                </video>
               </div>
+              
               <div className="shadow p-3">
                 <h3 className="text-primary">Schedule Your Course</h3>
                 <p>Course Info</p>

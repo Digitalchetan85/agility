@@ -16,14 +16,14 @@ const ServicesPages = () => {
       imgurl: img1,
       alt: "",
       title: "Coaching",
-      desc: "We are passionate about people and strongly believe in helping them realize their full potential through our “DREAMS” Coaching Model.",
+      desc: "We are passionate about people and strongly believe in helping them realize their full potential through our “DREAMS” Coaching Model. For more information Contact us.",
     },
     {
       id: 2,
       imgurl: img2,
       alt: "",
       title: "Mentoring",
-      desc: "We have expertise in the field of Executive / Leadership Coaching, Transforming Organizations to accomplish Digital Agility by adopt new ways of working & leading. We provide mentoring services to Agile Coaches, Scrum Masters, Senior Leaders & Change Agents to enhance their skill sets.",
+      desc: "We have expertise in the field of Executive / Leadership Coaching, Transforming Organizations to accomplish Digital Agility by adopt new ways of working & leading. ",
     },
     {
       id: 3,
@@ -44,7 +44,7 @@ const ServicesPages = () => {
       imgurl: img5,
       alt: "",
       title: "DIY Templates",
-      desc: "With our collective experience of transforming organizations, teams & people within, we have created a host of Do It Yourself (DIY) Templates to cater for all needs of Agile Coaches, Scrum Masters, Transformation Leaders and Change Agents. These would help in speeding up your transformation journey and help you enhance your horizons.",
+      desc: "With our collective experience of transforming organizations, teams & people within, we have created a host of Do It Yourself (DIY) Templates to cater for all needs of Agile Coaches, Scrum Masters, ",
     },
   ];
 

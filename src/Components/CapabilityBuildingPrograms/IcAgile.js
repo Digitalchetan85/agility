@@ -17,7 +17,7 @@ const IcAgile = () => {
       alt: "",
       title: "ICP - ACC",
       description: "text",
-      to: "/ic-aglie/icp-acc/",
+      to: "/ic-agile/icp-acc/",
     },
     {
       id: 2,
@@ -25,7 +25,7 @@ const IcAgile = () => {
       alt: "",
       title: "ICP - CAT",
       description: "text",
-      to: "/ic-aglie/icp-cat/",
+      to: "/ic-agile/icp-cat/",
     },
     {
       id: 3,
@@ -33,7 +33,7 @@ const IcAgile = () => {
       alt: "",
       title: "ICP - ORG",
       description: "text",
-      to: "/ic-aglie/icp-org/",
+      to: "/ic-agile/icp-org/",
     },
     {
       id: 4,
@@ -41,7 +41,7 @@ const IcAgile = () => {
       alt: "",
       title: "ICP - ATF",
       description: "text",
-      to: "//ic-aglie/icp-atf/",
+      to: "/ic-agile/icp-atf/",
     },
     {
       id: 5,
@@ -49,7 +49,7 @@ const IcAgile = () => {
       alt: "",
       title: "ICP - ENT",
       description: "text",
-      to: "/ic-aglie/icp-ent/",
+      to: "/ic-agile/icp-ent/",
     },
     {
       id: 6,
@@ -57,7 +57,7 @@ const IcAgile = () => {
       alt: "",
       title: "ICP - PDV",
       description: "text",
-      to: "/ic-aglie/icp-pdv/",
+      to: "/ic-agile/icp-pdv/",
     },
   ];
 
@@ -104,8 +104,7 @@ const IcAgile = () => {
                     />
                   </div>
                   <Card.Body>
-                    <Card.Title>{course.title}</Card.Title>
-                    <Card.Text>{course.description}</Card.Text>
+                    <Card.Title className="text-primary">{course.title}</Card.Title>
                     {/* <Model /> */}
                     <Button variant="outline-primary" as={Link} to={course.to}>
                       Read more

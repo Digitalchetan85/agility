@@ -61,21 +61,21 @@ const TopMenubar = () => {
                 >
                   <NavDropdown.Item
                     as={Link}
-                    to="/experimental-learning-programs/dai-esm"
+                    to="/dai-esm"
                   >
                     DAI - ESM
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item
                     as={Link}
-                    to="/experimental-learning-programs/dai-eac"
+                    to="/dai-eac"
                   >
                     DAI - EAC
                   </NavDropdown.Item>
                   <NavDropdown.Divider />
                   <NavDropdown.Item
                     as={Link}
-                    to="/experimental-learning-programs/dai-dal"
+                    to="/dai-dal"
                   >
                     DAI - DAL
                   </NavDropdown.Item>

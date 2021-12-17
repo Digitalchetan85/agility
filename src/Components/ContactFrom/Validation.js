@@ -20,10 +20,7 @@ export default function Validation(values) {
     //phone number 
     if(!values.phone.trim()) {
         errors.phone = "Phone number is required";
-    } else if (!values.phone.trim() === /^[0-9]{10}$/)
-    { 
-        errors.phone = "Enter the valid Phone Number";
-    }
+    } 
 
     //subject 
     if(!values.subject.trim()) {

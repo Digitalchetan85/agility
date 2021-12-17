@@ -7,13 +7,14 @@ import img1 from "../Images/training/8.png";
 import img2 from "../Images/training/9.png";
 import img3 from "../Images/training/10.png";
 import img4 from "../Images/training/11.png";
+import { Link } from 'react-router-dom';
 
 const TrainingDetails = () => {
   const associations = [
-    { id: 1, imgurl: img1, alt: "", title: "Capabiltity Building Programs" },
-    { id: 2, imgurl: img2, alt: "", title: "Experimental Learning Programs" },
-    { id: 3, imgurl: img3, alt: "", title: "Capabiltity Building Programs" },
-    { id: 4, imgurl: img4, alt: "", title: "Experimental Learning Programs" },
+    { id: 1, imgurl: img1, alt: "", link:"/capability-building-programs/ic-agile" },
+    { id: 2, imgurl: img2, alt: "", link:"/capability-building-programs/safe" },
+    { id: 3, imgurl: img3, alt: "", link:"/capability-building-programs/safe" },
+    { id: 4, imgurl: img4, alt: "", link:"/capability-building-programs/safe" },
   ];
 
   const options = {
@@ -44,16 +45,8 @@ const TrainingDetails = () => {
           <OwlCarousel options={options}>
             {associations.map((item, index) => (
               <div className="text-center m-1" key={index}>
-                <Card className="shadow-sm">
+                <Card className="shadow-sm" as={Link} to={item.link}>
                   <Card.Img variant="top" src={item.imgurl} />
-                  <Card.Body>
-                    <Card.Title>{item.title}</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Read More</Button>
-                  </Card.Body>
                 </Card>
               </div>
             ))}

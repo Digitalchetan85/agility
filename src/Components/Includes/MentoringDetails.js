@@ -5,11 +5,22 @@ import "react-owl-carousel2/src/owl.carousel.css";
 import "react-owl-carousel2/src/owl.theme.default.css";
 import img1 from "../Images/mentoring/6.png";
 import img2 from "../Images/mentoring/7.png";
+import { Link } from 'react-router-dom';
 
 const MentoringDetails = () => {
   const associations = [
-    { id: 1, imgurl: img1, alt: "", title: "Agile Leadership" },
-    { id: 2, imgurl: img2, alt: "", title: "Agile Coaching" },
+    {
+      id: 1,
+      imgurl: img1,
+      alt: "",
+      link:"",
+    },
+    {
+      id: 2,
+      imgurl: img2,
+      alt: "",
+      link:"",
+    },
   ];
 
   const options = {
@@ -40,16 +51,8 @@ const MentoringDetails = () => {
           <OwlCarousel options={options}>
             {associations.map((item, index) => (
               <div className="text-center m-1" key={index}>
-                <Card className="shadow-sm">
+                <Card className="shadow-sm" as={Link} to={item.link}>
                   <Card.Img variant="top" src={item.imgurl} />
-                  <Card.Body>
-                    <Card.Title>{item.title}</Card.Title>
-                    <Card.Text>
-                      Some quick example text to build on the card title and
-                      make up the bulk of the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Read More</Button>
-                  </Card.Body>
                 </Card>
               </div>
             ))}

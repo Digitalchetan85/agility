@@ -13,7 +13,7 @@ const MainSlider = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost/react-projects/agility/Api/getdata.php")
+      .get("https://brandwithbala.com/agility/Api/getdata.php")
       .then((response) => {
         console.log(response);
         SetSlides(response.data);

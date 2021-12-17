@@ -15,7 +15,7 @@ const Safe = () => {
       alt: "",
       title: "SA SAFe5",
       description: "text",
-      to: "/safe-flipbook",
+      to: "/safe5-sa",
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ const Safe = () => {
       alt: "",
       title: "SSM SAFe5",
       description: "text",
-      to: "/safe-flipbook",
+      to: "/safe5-ssm",
     },
     {
       id: 3,
@@ -31,7 +31,7 @@ const Safe = () => {
       alt: "",
       title: "SASM SAFe5",
       description: "text",
-      to: "/safe-flipbook",
+      to: "/safe5-sasm",
     },
     {
       id: 4,
@@ -39,7 +39,7 @@ const Safe = () => {
       alt: "",
       title: "POPM SAFe5",
       description: "text",
-      to: "/safe-flipbook",
+      to: "/safe5-popm",
     },
     {
       id: 5,
@@ -47,7 +47,7 @@ const Safe = () => {
       alt: "",
       title: "LPM SAFe5",
       description: "text",
-      to: "/safe-flipbook",
+      to: "/safe5-lpm",
     },
   ];
 
@@ -95,8 +95,7 @@ const Safe = () => {
                   </div>
                   <Card.Body>
                     <Card.Title>{course.title}</Card.Title>
-                    <Card.Text>{course.description}</Card.Text>
-                    <Button variant="primary" as={Link} to={course.to}>Read More</Button>
+                    <Button variant="primary" as={Link} to={course.to} className="stretched-link">Read More</Button>
                   </Card.Body>
                 </Card>
               </Col>

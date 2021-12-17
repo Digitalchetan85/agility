@@ -27,7 +27,7 @@ const CustomSlider = () => {
 
     const data = {image: imgUrl, alt:Alt};
       axios
-        .post("http://localhost/react-projects/agility/Api/custom-slider.php", data)
+        .post("https://brandwithbala.com/agility/Api/custom-slider.php", data)
         .then((response) => {
           console.log(response.data);
         })
