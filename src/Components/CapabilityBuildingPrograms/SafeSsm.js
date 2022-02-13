@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Card, Col, Container, Form, Row } from "react-bootstrap";
+import { Col, Container, Form, Row, Image } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import PayPal from "../PayPal/PayPal";
 import video1 from "../Images/SAFe-Course-Videos/SAFe-SM.mp4"
 import video2 from "../Images/testimonial-videos/Ian-Feedback-final.mp4"
+import icpSsm from "../Images/capability-building-programs/safe/ssm.png";
+
 
 const SafeSsm = () => {
   useEffect(() => {
@@ -159,19 +161,84 @@ const SafeSsm = () => {
         <Container>
           <Row>
             <Col md={8}>
-              <div className="ratio ratio-4x3">
-                {/* <iframe src="https://dai.trafft.com/booking-embedded" /> */}
-                <iframe
-                  src="https://designrr.page?id=149609&token=3761079522&type=FP&h=8009"
-                  title="SAFe Flip Book"
-                ></iframe>
-              </div>
+              <Row>
+                <Col md={3} className="align-self-center">
+                  <Image src={icpSsm} alt="" className="img-fluid" />
+                </Col>
+                <Col md={9} className="">
+                  <h2 className="text-primary py-3 ">
+                    About This Certification
+                  </h2>
+                  <p className="text-align-justify">If you want to become a certified scrum master with the skills to help leading companies succeed with Agile and scrum, the SAFe Scrum Master course is for you. Learn how scrum masters empower and lead Agile teams. Understand how to facilitate Agile events like iteration planning, stand-ups, and retrospectives. And discover how to help teams plan and complete their work.</p>
+                  <p>You’ll also learn the principles of servant leadership, so you can help develop high-performing, engaged, continuously improving teams in your own organization.</p>
+                </Col>
+              </Row>
+              <Row className="py-2">
+                <Col md={6} className="">
+                  <h4 className="text-primary py-2">
+                    Featured Learning Outcomes
+                  </h4>
+                  <ul>
+                    <li>How to facilitate Scrum events.</li>
+                    <li>How to support PI execution.</li>
+                    <li>How to coach teams to constantly improve.</li>
+                    <li>How to participate successfully in critical SAFe events, such as PI Planning.</li>
+                    <li>How to implement DevOps for continuous flow and delivery.</li>
+                  </ul>
+                </Col>
+                <Col md={6} className="">
+                  <h4 className="text-primary py-2">What you will receive</h4>
+                  <ul>
+                    <li>Course materials</li>
+                    <li>Access to SAFe® Collaborate, a visual online workspace</li>
+                    <li>One-year membership to the SAFe® Community Platform</li>
+                    <li>SAFe SM certification exam </li>
+                    <li>Connect to Digital Agility Institute Community</li>
+                  </ul>
+                </Col>
+                <p>Our training is delivered by SAFe Program Consultants with diverse experience of transforming teams & organizations implementing SAFe successfully.</p>
+                
+              </Row>
 
+              <Row>
+                <Col md={6} className="pb-3 pt-md-2 pb-md-2">
+                  <h4 className="text-primary py-2">Who Should attend :</h4>
+                  <ul>
+                    <li>First level Managers</li>
+                    <li>Agile Project Managers </li>
+                    <li>Scrum Masters & aspiring Scrum Masters  </li>
+                    <li>Business Analysts,  </li>
+                    <li>and anyone with the desire to explore the power of servant leadership.and anyone with the desire to explore the power of SAFe.</li>
+                  </ul>
+                </Col>
+                <Col md={6} className="pb-3 pt-md-2 pb-md-2">
+                  <h4 className="text-primary py-2">Prerequisites:</h4>
+                  <ul>
+                   
+                    <li>
+                      There are no conditional pre-requisites for the training
+                      program
+                    </li>
+                    <li>
+                      Participants should have exposure at least one agile
+                      framework.
+                    </li>
+                  </ul>
+                </Col>
+              </Row>
+              {/* <div className="">
+                <div className="ratio ratio-4x3">
+                  <iframe
+                    src="https://designrr.page?id=149596&token=4003258846&type=FP&h=3861"
+                    title="IC Agile FlipBook"
+                  ></iframe>
+                </div>
+              </div> */}
               <div className="pt-2 pb-2">
                 <Row>
                   <Col md={6}>
                     <div className="text-center pt-3 pb-3">
-                      <h2 className="text-white"></h2>
+                      <h2 className="text-white"> </h2>
                       <video height="400" width="400" controls>
                         <source src={video2} type="video/mp4"></source>
                       </video>

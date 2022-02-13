@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Card, Col, Container, Form, Row } from "react-bootstrap";
+import { Image, Col, Container, Form, Row } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import PayPal from "../PayPal/PayPal";
 import video1 from "../Images/SAFe-Course-Videos/SAFe-LPM.mp4";
 import video2 from "../Images/testimonial-videos/Ian-Feedback-final.mp4";
+import icpLpm from "../Images/capability-building-programs/safe/lpm.png";
 
 const SafeLpm = () => {
   useEffect(() => {
@@ -159,19 +160,84 @@ const SafeLpm = () => {
         <Container>
           <Row>
             <Col md={8}>
-              <div className="ratio ratio-16x9">
-                {/* <iframe src="https://dai.trafft.com/booking-embedded" /> */}
-                <iframe
-                  src="https://designrr.page?id=149606&token=1933378014&type=FP&h=3425"
-                  title="SAFe Flip Book"
-                ></iframe>
-              </div>
+              <Row>
+                <Col md={3} className="align-self-center">
+                  <Image src={icpLpm} alt="" className="img-fluid" />
+                </Col>
+                <Col md={9} className="">
+                  <h2 className="text-primary py-3 ">
+                    About This Certification
+                  </h2>
+                  <p className="text-align-justify">The Lean Portfolio Management course helps executives, project management officers (PMOs) and other key stakeholders plan dynamically and be flexible enough to adjust initiatives and budgets as the market changes. The LPM course provides the guidance and tools attendees need to work effectively in remote environments with distributed teams.</p>
+                  <p>You’ll learn how to connect portfolio strategy and initiatives to the planning and execution of work, how to integrate feedback from participatory budgeting, and how to adapt to change while maintaining your funding vision and roadmap.</p>
+                </Col>
+              </Row>
+              <Row className="py-2">
+                <Col md={6} className="">
+                  <h4 className="text-primary py-2">
+                    Featured Learning Outcomes
+                  </h4>
+                  <ul>
+                    <li>How to connect the portfolio to the enterprise.</li>
+                    <li>How to maintain portfolio vision and roadmap.</li>
+                    <li>How to establish Lean budgets and guardrails.</li>
+                    <li>How to create portfolio flow..</li>
+                  </ul>
+                </Col>
+                <Col md={6} className="">
+                  <h4 className="text-primary py-2">What you will receive</h4>
+                  <ul>
+                    <li>Course materials</li>
+                    <li>Access to SAFe® Collaborate, a visual online workspace</li>
+                    <li>One-year membership to the SAFe® Community Platform</li>
+                    <li>SAFe LPM certification exam</li>
+                    <li>Access to the optional Getting Started with LPM Workshop</li>
+                    <li>Connect to Digital Agility Institute Community</li>
+                  </ul>
+                </Col>
+                <p>Our training is delivered by SAFe Program Consultants with diverse experience of transforming teams & organizations implementing SAFe successfully.</p>
+                
+              </Row>
 
+              <Row>
+                <Col md={6} className="pb-3 pt-md-2 pb-md-2">
+                  <h4 className="text-primary py-2">Who Should attend :</h4>
+                  <ul>
+                    <li>Agile Leaders or aspiring Leaders </li>
+                    <li>Enterprise Agile Coaches and aspiring coaches </li>
+                    <li>First level & Middle level Managers </li>
+                    <li>Change Managers & Change Agents </li>
+                    <li>and anyone with the desire to explore the power of People Development.</li>
+                  </ul>
+                </Col>
+                <Col md={6} className="pb-3 pt-md-2 pb-md-2">
+                  <h4 className="text-primary py-2">Prerequisites:</h4>
+                  <ul>
+                   <li>An Intermediate level course</li>
+                    <li>
+                      There are no conditional pre-requisites for the training
+                      program
+                    </li>
+                    <li>
+                      Participants should have exposure at least one agile
+                      framework.
+                    </li>
+                  </ul>
+                </Col>
+              </Row>
+              {/* <div className="">
+                <div className="ratio ratio-4x3">
+                  <iframe
+                    src="https://designrr.page?id=149596&token=4003258846&type=FP&h=3861"
+                    title="IC Agile FlipBook"
+                  ></iframe>
+                </div>
+              </div> */}
               <div className="pt-2 pb-2">
                 <Row>
                   <Col md={6}>
                     <div className="text-center pt-3 pb-3">
-                      <h2 className="text-white"></h2>
+                      <h2 className="text-white"> </h2>
                       <video height="400" width="400" controls>
                         <source src={video2} type="video/mp4"></source>
                       </video>

@@ -20,6 +20,11 @@ $secondary-color: #eea45e;
 $ternary-color: #f8f9fa;
 $white-color: #ffffff;
 
+
+p {
+  text-align: justify;
+}
+
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 

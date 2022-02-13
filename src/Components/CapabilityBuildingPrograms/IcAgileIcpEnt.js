@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Col, Container, Form, Row } from "react-bootstrap";
+import { Col, Container, Form, Row, Image} from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import PayPal from "../PayPal/PayPal";
 import video1 from "../Images/videos/ICP-ENT.mp4"
 import video2 from "../Images/testimonial-videos/Maria-Feedback-final.mp4"
+import icpEnt from "../Images/capability-building-programs/icp-ent.png";
 
 const IcAgileIcpEnt = () => {
   useEffect(() => {
@@ -159,20 +160,89 @@ const IcAgileIcpEnt = () => {
         <Container>
           <Row>
             <Col md={8}>
-              <div className="">
+              <Row>
+                <Col md={3} className="align-self-center">
+                  <Image src={icpEnt} alt="" className="img-fluid" />
+                </Col>
+                <Col md={9} className="">
+                  <h2 className="text-primary py-3 ">
+                    About This Certification
+                  </h2>
+                  <p className="text-align-justify">ICP-ENT certification is one of the advanced certifications through which you will gain a deep understanding of agility at the enterprise level by learning the cultural, structural, process and leadership perspectives.</p>
+                  <p>The Enterprise Agility Masterclass helps you discover how organizations become more responsive and purpose-driven, and the changes an organization need to go through to be more agile through an interactive deep dive into enterprise agility. We will show you how to design processes with agility in mind engaging marketing, sales and finance for business agility. </p>
+                </Col>
+              </Row>
+              <Row className="py-2">
+                <Col md={6} className="">
+                  <h4 className="text-primary py-2">
+                    Featured Learning Outcomes
+                  </h4>
+                  <ul>
+                    <li>Understanding Systems and Complexity Theory</li>
+                    <li>Extending Agility to the Enterprise</li>
+                    <li>Adaptive Principles and Patterns for Organizational Design</li>
+                    <li>Understanding and Working with Executive Teams</li>
+                  </ul>
+                </Col>
+                <Col md={6} className="">
+                  <h4 className="text-primary py-2">What you will receive</h4>
+                  <ul>
+                    <li>Access to eLearning Portal</li>
+                    <li>Course material & Work Book</li>
+                    <li>Export of Miro Board</li>
+                    <li>ICP-ENT certificate from ICAgile (valid for lifetime) </li>
+                    <li>Connect to Digital Agility Institute Community</li>
+                  </ul>
+                </Col>
+                <p>
+                Our training is designed by Certified & Practicing Professional Coaches, Training from the Back of the Room practitioners specialising in delivering experiential learning programs. 
+                </p>
+                <p>
+                  This masterclass is delivered by practicing professional
+                  coaches Trainer with diverse experience of transforming teams
+                  & organizations.
+                </p>
+              </Row>
+
+              <Row>
+                <Col md={6} className="pb-3 pt-md-2 pb-md-2">
+                  <h4 className="text-primary py-2">Who Should attend :</h4>
+                  <ul>
+                    <li>Agile team leaders or aspiring team leaders</li>
+                    <li>Enterprise Agile Coaches and aspiring coaches</li>
+                    <li>Scrum Masters, Agile Project Managers, </li>
+                    <li>Change Managers & Change Agents</li>
+                    <li>and anyone with the desire to explore the power of Organizational Change.</li>
+                  </ul>
+                </Col>
+                <Col md={6} className="pb-3 pt-md-2 pb-md-2">
+                  <h4 className="text-primary py-2">Prerequisites:</h4>
+                  <ul>
+                    <li>An Intermediate level course</li>
+                    <li>
+                      There are no conditional pre-requisites for the training
+                      program
+                    </li>
+                    <li>
+                      Participants should have exposure at least one agile
+                      framework.
+                    </li>
+                  </ul>
+                </Col>
+              </Row>
+              {/* <div className="">
                 <div className="ratio ratio-4x3">
                   <iframe
-                    src="https://designrr.page?id=149602&token=3279375686&type=FP&h=3153"
+                    src="https://designrr.page?id=149596&token=4003258846&type=FP&h=3861"
                     title="IC Agile FlipBook"
                   ></iframe>
                 </div>
-              </div>
-
+              </div> */}
               <div className="pt-2 pb-2">
                 <Row>
                   <Col md={6}>
                     <div className="text-center pt-3 pb-3">
-                      <h2 className="text-white"></h2>
+                      <h2 className="text-white"> </h2>
                       <video height="400" width="400" controls>
                         <source src={video2} type="video/mp4"></source>
                       </video>

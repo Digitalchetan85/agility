@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { Col, Container, Form, Row } from "react-bootstrap";
+import { Col, Container, Form, Row, Image } from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import PayPal from "../PayPal/PayPal";
 import video1 from "../Images/videos/ICP-ACC.mp4";
 import video2 from "../Images/testimonial-videos/Andres-Feedback-final.mp4";
+import icpAcc from "../Images/capability-building-programs/icp-acc.png";
 
 const IcAgileIcpAcc = () => {
   useEffect(() => {
@@ -162,20 +163,110 @@ const IcAgileIcpAcc = () => {
         <Container>
           <Row>
             <Col md={8}>
-              <div className="">
+              <Row>
+                <Col md={3} className="align-self-center">
+                  <Image src={icpAcc} alt="" className="img-fluid" />
+                </Col>
+                <Col md={9} className="">
+                  <h2 className="text-primary py-3 ">
+                    About This Certification
+                  </h2>
+                  <p className="text-align-justify">
+                    ICP-ACC is the one of the Knowledge-based certifications on
+                    the Agile Coaching track. The certification focuses
+                    primarily on Coaching Mindset, various Roles played by an
+                    Agile Coach, and their responsibilities while transforming
+                    teams. After finishing the certification, participant will
+                    be able to differentiate between Professional Coaching,
+                    Mentoring, Teaching, and Team Coaching. The participants
+                    will also be able to build their skills & competencies tp
+                    create a psychologically safe environment and healthy
+                    conflict resolution which helps in building high performance
+                    teams.
+                  </p>
+                </Col>
+              </Row>
+              <Row className="py-2">
+                <Col md={6} className="">
+                  <h4 className="text-primary py-2">
+                    Featured Learning Outcomes
+                  </h4>
+                  <ul>
+                    <li>Conducting the Coaching Conversation</li>
+                    <li>
+                      Contrasting Mentoring with Coaching Helping Team Members
+                    </li>
+                    <li>Experience the Agile Mindset Shifts</li>
+                    <li>Leadership Engagement</li>
+                    <li>Delivering Experimental Learning Programs</li>
+                  </ul>
+                </Col>
+                <Col md={6} className="">
+                  <h4 className="text-primary py-2">What you will receive</h4>
+                  <ul>
+                    <li>Access to eLearning Portal</li>
+                    <li>Course material & Work Book</li>
+                    <li>Export of Miro Board</li>
+                    <li>
+                      Icp - Acc certificate from IC Agile (valid for lifetime)
+                    </li>
+                    <li>Connect to Digital Agility Institute Community</li>
+                  </ul>
+                </Col>
+                <p>
+                  Our training is designed by certified & practicing
+                  professional coaches, Training from the back of the room
+                  practitioners specialising in delivering experiential learning
+                  programs.
+                </p>
+                <p>
+                  This masterclass is delivered by practicing professional
+                  coaches Trainer with diverse experience of transforming teams
+                  & organizations.
+                </p>
+              </Row>
+
+              <Row>
+                <Col md={6} className="pb-3 pt-md-2 pb-md-2">
+                  <h4 className="text-primary py-2">Who Should attend :</h4>
+                  <ul>
+                    <li>Agile team leaders or aspiring team leaders</li>
+                    <li>Agile Coaches and aspiring Coaches</li>
+                    <li>Scrum Masters, Agile Project Managers</li>
+                    <li>Product Owners, Business Analysts,</li>
+                    <li>
+                      And anyone with the desire to explore the power of
+                      coaching
+                    </li>
+                  </ul>
+                </Col>
+                <Col md={6} className="pb-3 pt-md-2 pb-md-2">
+                  <h4 className="text-primary py-2">Prerequisites:</h4>
+                  <ul>
+                    <li>
+                      There are no conditional pre-requisites for the training
+                      program
+                    </li>
+                    <li>
+                      Participants should have exposure at least one agile
+                      framework
+                    </li>
+                  </ul>
+                </Col>
+              </Row>
+              {/* <div className="">
                 <div className="ratio ratio-4x3">
                   <iframe
                     src="https://designrr.page?id=149596&token=4003258846&type=FP&h=3861"
                     title="IC Agile FlipBook"
                   ></iframe>
                 </div>
-              </div>
-
+              </div> */}
               <div className="pt-2 pb-2">
                 <Row>
                   <Col md={6}>
                     <div className="text-center pt-3 pb-3">
-                      <h2 className="text-white"></h2>
+                      <h2 className="text-white"> </h2>
                       <video height="400" width="400" controls>
                         <source src={video2} type="video/mp4"></source>
                       </video>

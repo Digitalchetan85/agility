@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Col, Container, Form, Row } from "react-bootstrap";
+import { Col, Container, Form, Row, Image} from "react-bootstrap";
 import { Button } from "react-bootstrap";
 import PayPal from "../PayPal/PayPal";
 import video1 from "../Images/videos/ICP-ENT.mp4"
 import video2 from "../Images/testimonial-videos/Carl-Feedback-final.mp4"
+import icpAtf from "../Images/capability-building-programs/icp-atf.png";
+
 
 const IcAgileIcpAtf = () => {
   useEffect(() => {
@@ -159,20 +161,89 @@ const IcAgileIcpAtf = () => {
         <Container>
           <Row>
             <Col md={8}>
-              <div className="">
+              <Row>
+                <Col md={3} className="align-self-center">
+                  <Image src={icpAtf} alt="" className="img-fluid" />
+                </Col>
+                <Col md={9} className="">
+                  <h2 className="text-primary py-3 ">
+                    About This Certification
+                  </h2>
+                  <p className="text-align-justify">ICP-ATF is one of two knowledge-based certifications on the Agile Coaching track. It focuses primarily on the Skills, Competencies & Mindset expected of an Agile Team Facilitator. It also provides tools and techniques for effectively designing & facilitating meetings and workshops engaging the teams in accomplishing agreed outcomes.</p>
+                  <p>Attending this certification program, participants will enhance their skills on art of facilitation fostering collaboration and wholesome participation by teams. Participants will also build their facilitator toolkit and gain experience of facilitating specific agile events within their context.</p>
+                </Col>
+              </Row>
+              <Row className="py-2">
+                <Col md={6} className="">
+                  <h4 className="text-primary py-2">
+                    Featured Learning Outcomes
+                  </h4>
+                  <ul>
+                    <li>The Facilitation Mindset</li>
+                    <li>Facilitating Collaborative Conversations</li>
+                    <li>Facilitating Selected Agile Meetings</li>
+                    <li>Adjusting Facilitation Given Team Maturity</li>
+                  </ul>
+                </Col>
+                <Col md={6} className="">
+                  <h4 className="text-primary py-2">What you will receive</h4>
+                  <ul>
+                    <li>Access to eLearning Portal</li>
+                    <li>Course material & Work Book</li>
+                    <li>Export of Miro Board</li>
+                    <li>ICP-ATF certificate from ICAgile (valid for lifetime) </li>
+                    <li>Connect to Digital Agility Institute Community</li>
+                  </ul>
+                </Col>
+                <p>
+                Our training is designed by Certified & Practicing Professional Coaches, Training from the Back of the Room practitioners specialising in delivering experiential learning programs. 
+                </p>
+                <p>
+                  This masterclass is delivered by practicing professional
+                  coaches Trainer with diverse experience of transforming teams
+                  & organizations.
+                </p>
+              </Row>
+
+              <Row>
+                <Col md={6} className="pb-3 pt-md-2 pb-md-2">
+                  <h4 className="text-primary py-2">Who Should attend :</h4>
+                  <ul>
+                    <li>Agile team leaders or aspiring team leaders</li>
+                    <li>Agile Coaches and aspiring coaches</li>
+                    <li>Scrum Masters, Agile Project Managers, </li>
+                    <li>Product Owners, Business Analysts</li>
+                    <li>and anyone with the desire to explore the power of Facilitation.</li>
+                  </ul>
+                </Col>
+                <Col md={6} className="pb-3 pt-md-2 pb-md-2">
+                  <h4 className="text-primary py-2">Prerequisites:</h4>
+                  <ul>
+                    
+                    <li>
+                      There are no conditional pre-requisites for the training
+                      program
+                    </li>
+                    <li>
+                      Participants should have exposure at least one agile
+                      framework.
+                    </li>
+                  </ul>
+                </Col>
+              </Row>
+              {/* <div className="">
                 <div className="ratio ratio-4x3">
                   <iframe
-                    src="https://designrr.page?id=149598&token=3907694501&type=FP&h=3703"
+                    src="https://designrr.page?id=149596&token=4003258846&type=FP&h=3861"
                     title="IC Agile FlipBook"
                   ></iframe>
                 </div>
-              </div>
-
+              </div> */}
               <div className="pt-2 pb-2">
                 <Row>
                   <Col md={6}>
                     <div className="text-center pt-3 pb-3">
-                      <h2 className="text-white"></h2>
+                      <h2 className="text-white"> </h2>
                       <video height="400" width="400" controls>
                         <source src={video2} type="video/mp4"></source>
                       </video>
